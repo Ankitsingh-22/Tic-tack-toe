@@ -15,7 +15,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.h1{
+  padding-top: 28px;
+  font-size: 48px;
+}
 .game {
   height: 60vmin;
   width: 60vmin;
@@ -45,6 +48,11 @@ body {
   border-radius: 1rem;
   border: none;
 }
+#reset-btn:hover, #new-btn:hover{
+  cursor: pointer;
+  background-color: #0a0a08;
+  transition: ease-out 0.3s;
+}
 
 #new-btn {
   padding: 1rem;
@@ -71,4 +79,31 @@ body {
 
 .hide {
   display: none;
+}
+@media only screen and (max-width: 600px) {
+  
+  .game{
+    height: 72vmin;
+    width: 80vmin;
+  }
+  .box{
+    height: 26vmin;
+    width: 24vmin;
+    font-size: 14vmin;
+  }
+  #reset-btn{
+    padding: 1.50rem;
+    font-size: 1.80rem;
+  }
+  .msg-container {
+    height: 178vmin;
+    gap: 5rem;
+  }
+  #new-btn {
+    padding: 1.50rem;
+    font-size: 1.60rem;
+  }
+  #msg{
+    font-size: 7vmin;
+  }
 }
